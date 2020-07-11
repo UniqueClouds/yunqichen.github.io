@@ -1,689 +1,601 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
+
+
+
+
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="一个人只有此生此世是不够的，他还应该拥有诗意的世界">
-<meta property="og:type" content="website">
-<meta property="og:title" content="沁寒微雪">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="沁寒微雪">
-<meta property="og:description" content="一个人只有此生此世是不够的，他还应该拥有诗意的世界">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="陈云奇">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://yoursite.com/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>沁寒微雪</title>
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="一个人只有此生此世是不够的，他还应该拥有诗意的世界">
+  <meta name="author" content="陈云奇">
+  <meta name="keywords" content="">
+  <title>沁寒微雪</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
 
 
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
 
 
 
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
 
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
+<link  rel="stylesheet" href="/css/main.css" />
 
-</head>
+<!-- 自定义样式保持在最底部 -->
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
 
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">沁寒微雪</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
 </nav>
 
-
-
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/11/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="陈云奇">
-      <meta itemprop="description" content="一个人只有此生此世是不够的，他还应该拥有诗意的世界">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="沁寒微雪">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/07/11/hello-world/" class="post-title-link" itemprop="url">初次见面，你好</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
               
-
-              <time title="创建时间：2020-07-11 00:00:00 / 修改时间：00:19:03" itemprop="dateCreated datePublished" datetime="2020-07-11T00:00:00+08:00">2020-07-11</time>
             </span>
 
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>你好，我是陈云奇</p>
-<p>一个一直求而不得胡思乱想不务正业的人</p>
-<p>热爱观察人间、社会与世界</p>
-<p>目前就读于浙江大学软件工程专业</p>
-<p>喜欢读书、摄影、徒步和交谈</p>
-<p>希望未来能成为一名卓越的程序员</p>
-<p><em>make the world a better place</em></p>
-<h2 id="这个博客的目的"><a href="#这个博客的目的" class="headerlink" title="这个博客的目的"></a>这个博客的目的</h2><blockquote>
-<ul>
-<li>记录我的学习经验</li>
-<li>记录我的思索路径</li>
-<li>记录我的人生旅途</li>
-</ul>
-</blockquote>
-<p>希望能够给碰巧进入这个网站的朋友一点帮助(^__^);</p>
-<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><blockquote>
-<p>我的邮箱：<a href="mailto:284107585@qq.com">284107585@qq.com</a> </p>
-</blockquote>
-<p>一个人只拥有此生此世是不够的，他还应该拥有诗意的世界。——王小波</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/06/22/experience-in-ZJU/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="陈云奇">
-      <meta itemprop="description" content="一个人只有此生此世是不够的，他还应该拥有诗意的世界">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="沁寒微雪">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/06/22/experience-in-ZJU/" class="post-title-link" itemprop="url">溯洄从之，道阻且长——在ZJU一年有感</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-06-22 00:00:00" itemprop="dateCreated datePublished" datetime="2020-06-22T00:00:00+08:00">2020-06-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-11 10:31:29" itemprop="dateModified" datetime="2020-07-11T10:31:29+08:00">2020-07-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="溯洄从之，道阻且长——在ZJU一年有感"><a href="#溯洄从之，道阻且长——在ZJU一年有感" class="headerlink" title="溯洄从之，道阻且长——在ZJU一年有感"></a>溯洄从之，道阻且长——在ZJU一年有感</h2><h3 id="序"><a href="#序" class="headerlink" title="序"></a><strong>序</strong></h3><p>王小波曾在《万寿寺》的结尾中写道：「一切都在无可挽回地走向庸俗」。然而，就在同一段中，他却也写了下那句：「一个人只拥有此生此世是不够的，他还应该拥有诗意的世界」。正如他在同一段展现的不同句子一样，终点也许是让人失望的，但在路上，还是要好好走，「永远青春，永远热泪盈眶」。</p>
-<p>也因此，出于一种自恋的想法，我在此写下一些文字，并自以为会对一些阅读文字的人有所启发。最起码，不谈启发，趣味应该还是有的吧。我想，人人都有一种隐匿的窥伺欲，至少对于我来说，我特别喜欢看他人真实的个人生活经历与感受的记录与陈述。从这个角度来说，我还是蛮喜欢自传的。毕竟，人人都喜欢听故事。</p>
-<p>不过，至少目前来说，我感兴趣的大多还是同样走在计算机学科路上的前辈们的分享。当然，也有受到我阅读的几位学长blog的启发：一篇是<a href="https://zhang-ming-rui.gitbook.io/when-rocket-goes-up/er-da-xue-chu-qi/jiao_liu_suo_ji_er_2014_2014_deng_jun_hui_lao_shi" target="_blank" rel="noopener">「交流琐记二——邓俊辉老师」</a>，一篇是<a href="https://byvoid.com/zhs/blog/treasure-young-days/" target="_blank" rel="noopener">「劝君惜取少年时」</a>，还有<a href="https://conanhujinming.github.io/post/tips_for_interview/#找实习" target="_blank" rel="noopener">「19CS小硕校招面试心得与自学CS经验及找工作分享」</a>。（打开网页可能需要梯子）</p>
-<p>我认为，这种前人的经验分享是比较缺失的，但却是有必要的。因为作为一种指引也好，还是一种警戒也好，它至少能让你稍稍清楚前方的路是怎样的，而非如迷雾一把胡乱摸索。</p>
-<p>当我们刚进大学时，一切还如此陌生，我们却充满着自信与无畏，想着摆脱高考的枷锁之后，自己便能发挥出千百倍的威力，终于可以秀一把自己的肌肉了。然而，事实真的如此吗？至少在浙大，我看并非如此。</p>
-<p>一个人孤独地在路上走，难免感到寂寞，或是对前路产生迷茫、怀疑。若有前辈在前方留下线索、指引或经验，走起路来便觉轻松许多。另一方面，在路上走着，很多人可能只是兴奋期待地往前看，而我却倾向于不时停下回头看看来时的路，看自己这一路是怎么走来的。</p>
-<p>很多事情都要回过头来看看，才看得清楚。先在迷雾中寻找灯塔，后在灯塔上回望迷雾。</p>
-<p>我在新年的总结体会中粗略描绘了自己对于大学的感觉，有关幻想的破灭和有关孤独与联系。现在回头来看，我更多地还是在描述一种模糊的感觉，并没能清晰完整地表达出我对大学的认知与感受。而现在，倏忽之间，一年已经过去，对于大学的想法已经渐渐沉淀扎实，而我自己在这一年里也着实变化了许多。</p>
-<hr>
-<h3 id="选课与上课"><a href="#选课与上课" class="headerlink" title="选课与上课"></a><strong>选课与上课</strong></h3><h4 id="秋冬学期课表，学分总共为28-5分（算上军训2学分，扣掉形策1学分）"><a href="#秋冬学期课表，学分总共为28-5分（算上军训2学分，扣掉形策1学分）" class="headerlink" title="秋冬学期课表，学分总共为28.5分（算上军训2学分，扣掉形策1学分）"></a>秋冬学期课表，学分总共为28.5分（算上军训2学分，扣掉形策1学分）</h4><blockquote>
-<p><img src="/images/2019-2020autumn.jpg" alt=""><br><strong>2019-2020秋学期课表</strong></p>
-</blockquote>
-<blockquote>
-<p><img src="/images/2019-2020winter.jpg" alt=""><br><strong>2019-2020冬学期课表</strong></p>
-</blockquote>
-<h4 id="春夏学期课表，学分总共为27学分"><a href="#春夏学期课表，学分总共为27学分" class="headerlink" title="春夏学期课表，学分总共为27学分"></a>春夏学期课表，学分总共为27学分</h4><blockquote>
-<p><img src="/images/2019-2020spring.jpg" alt=""><br><strong>2019-2020春学期课表</strong></p>
-</blockquote>
-<blockquote>
-<p><img src="/images/2019-2020summer.jpg" alt=""><br><strong>2019-2020夏学期课表</strong></p>
-</blockquote>
-<hr>
-<p>浙大的选课方式是比较特别的，也被同学们戏称为“选课彩票系统”。它只会在课表上提前帮你选好几门你下学期必修的课程，通常称为预置。而剩下的课则都需要你在选课系统里自己慢慢地选，包括通识选修课、体育课、其他专业的专业课、一些公共基础课。而这些课的余量各自不一，有的课的余量大于选课人数，稍微热门一点的课，或者评分高一点的老师，就很容易出现余量不足情况，这时候就看系统筛选结果，以及主要看你的运气如何。选专业课或者辅修课的同学享有一定优先级，但也不能保证是百分百进。所以会有二轮、三轮选课乃至补选。总的来说，这种制度总体来说比较公平，不用拼手速抢课，但选课还是要很有策略性，也算是一个博弈的过程。</p>
-<p>培养方案要求我们除了公共基础课、专业必修选修课、思政课外，还要修一定学分的通识选修课、创新创业类型的课、个性学分和跨专业模块。毕业总学分要求在140-150分。一学期通常来说，学分在25分左右就足够了，当然也不排除一部分同学会选到30分以上，把课表排得密密麻麻的。不过这样子的话就要把时间管理安排得很紧密，也牺牲了课外时间了。</p>
-<p>因为预置课的不同，即使是同一个班级的同学，也只有很少的几门课有在一起上的机会，也就是说，工作日大部分时间都是一个人在不同教室间来回奔波。当然，如果是一对cp,可能会在选课的时候就提前商量好一起选什么课然后一起去上课，但是考虑到彩票系统，这种商量的预期和结果也会出现偏差。总的来说，大部分课只能一个人去上，所以刚开始一门课程的时候大家都是比较陌生的。特别是一些大课，比如微积分、线性代数、C程，就基本结识不到什么新朋友。就我个人而言，线性代数我是因为与x同学在军训时就结识，所以上课是一起上的；C程是与高中同学杰克一起上的；微积分则基本上是一个人在上了；思修是老师分好组，按小组位置坐的，我有幸和三一一起面试的同学（我们都被刷了）重逢；大英课则是四人一组一大桌，而且有小组讨论和聊天之类的，互相之间容易熟络，我也算是在这门课上交到了不错的朋友……大部分课结识朋友还是要机缘巧合看运气。所以有的时候，奔波忙碌，孤身一人，不免会有一种孤独感。</p>
-<p>至于说到真正的上课，则不免会让人产生落差。不客气地说，很多课老师上课的水平都不如我高中或初中的老师……当然，真正讲得好的老师也不在少数。很多同学选课前会去浙大特有的<a href="https://chalaoshi.soobb.com/" target="_blank" rel="noopener">「查老师」</a>上看看，但是查老师上给分也不一定权威，有的老师评分高不过是因为事少分高，有的老师评分低又可能指因为一些教学之外的缘故，比如给分差，比如互评制度。总之，兼听则明，偏听则暗。<br>[注]: 「查老师」在去年被查封转入地下，现在学生多用微信小程序「课否」<br>许多水课都是这样一种情况：老师在讲台上，操着让人犯困的语调，有板有眼地念着PPT，或者是ppt也没有，自己发散思维，讲到哪里去都不知道了；学生则在下面，或者用手撑着脑袋钓鱼睡觉，或者玩着手机自娱自乐，或者拿出微积分习题开始写开始做。</p>
-<p>水课是千篇一律的水，好课则是百花齐放的好。</p>
-<p>就我个人而言，我也算是上过二十几门课程了，就来分享一下自己的体会吧。 </p>
-<p>遇到的好课有： </p>
-<ul>
-<li>赵晖的「现代中外关系」。脑子里装了无数史料文献，称为百家讲坛毫不过分。课比较硬核，任务量不小，但收获颇丰。他谈到了许多敏感的历史事件，给我带来了崭新的认知。某种程度来说，他的课给我带来了思想上新的的启蒙。我对历史的热爱以及对社会的思考都因此进一步加深了。 </li>
-<li>汤树元的「线性代数（甲）」。老师脑子实在太好使了，讲得特别溜。体育老师一样健壮的身体。永远穿着短袖。标志性的冷笑。偶尔回忆往事。虽然每次他上课讲的东西我都很懵逼，但事后一回顾就会觉得收获颇丰。 </li>
-<li>朱伯铭的「公共经济分析导论」。一门导论课，和现实生活联系很紧密。把经济学讲得非常有趣。老师也经常分享自己的故事。一个有点老派又很傲娇的老头儿。值得尊敬的老师。考核要求也很独特。 </li>
-<li>刘召峰的「中国近现代史纲要」。虽然有浓浓的又红又专的味道，经常会把历史事件牵扯到马列主义意识形态上，但老师历史功底扎实，而且乐于接受同学的思考质疑。讲课的不足就是大多是范范而谈，细节不深。但老师人还是不错的。 </li>
-<li>卢兴江的「微积分（甲）II」。老师是真的好，但是因为网课，微积分课我也基本没听。只能说很遗憾。 </li>
-<li>史占泓的「托福写作」。英语课嘛，上来上去就那么回事。不过老师人不错，分析的也还可以。关键是作文这东西需要老师的批改和反馈，这一点还是很不错的。当然，对英语基础要求不低。 </li>
-<li>（旁听）高艳东的「刑法总论」。</li>
-</ul>
-<p>遇到的水课或者老师讲得很一般的课 </p>
-<ul>
-<li><p>水课：</p>
-<ul>
-<li>陈小英「思想道德修养与法律基础」。思政课日常被认为是水课，老师人不错，偶有拖课，给分挺好。当初因为华为251事件还与她争论过一番。</li>
-</ul>
-</li>
-<li><p>彭列平「形式与政策Ⅰ」。老师上课还算认真吧，但这门课基本应该没人听课。</p>
-</li>
-<li><p>水课且讲得一般的：</p>
-<ul>
-<li>赵晓红的「近代中日关系史」。认真尝试听了半节课就困得不行了。类似读PPT吧，比较无趣。我就翘课了几节，最后被正态了3.3（<del>_</del>)<br>  <del>不过给分似乎确实不错，虽然我很讨厌根据给分好坏选老师的做法，但不得不承认，有些水课但又不得不上的课，根据给分好坏选老师是明智的选择</del></li>
-<li>陈建军「亚洲经济发展」。就挺老师谈天说地吧，内容很浅很老，学不到什么东西。</li>
-</ul>
-</li>
-<li><p>讲得一般的：</p>
-<ul>
-<li>吕丽花「大学物理（乙）Ⅰ」。可能是因为课时少而内容多，或者可能是网上上课原因，反正就是一直读PPT，没有高中物理的那种乐趣，索然无味。</li>
-</ul>
-</li>
-</ul>
-<p>一般来说，水课基本上不怎么听，要么看书，要么写微积分，要么睡觉，要么干脆翘课。 害，近代中日关系史因为翘课多次，最后只拿了3.3的正态。但即使是水课，也仍然有同学表现特别积极，积极发言或者展示，或者论文字数特别多之类的。这在浙大一般被称为恶竞。虽然不排除有一部分人是真的热爱某个课，但稍加恶意地揣测，更多同学只是为了在正态分布的情况下争取个高分吧。</p>
-<p>关于水课硬课的问题，我在豆瓣上关注的浙大周沐君老师的<a href="https://www.douban.com/people/mujun_soc/status/3001440075/" target="_blank" rel="noopener">「一番叙述」</a>还是比较透彻的。关于课是用来应付的，还是用来学习收获的，这点我会在后面继续说明。</p>
-<hr>
-<h3 id="学业生活"><a href="#学业生活" class="headerlink" title="学业生活"></a><strong>学业生活</strong></h3><p>似乎是因为高考后休息了长足的时间，又加上军训时被强迫形成的作息习惯，大一上学期刚开学的时候真的是精力满满，兴致冲冲。</p>
-<p>刚开始的几天因为每天都是接触到新课程，遇到新老师，碰到新面孔，每节课都还算听得津津有味，比较认真。体育课的「舞龙舞狮」也是极有意思。每天课后去找自习之处也是略带着点不好意思和生疏，或者是到图书馆小心翼翼静悄悄地寻找一张空座位，夏天图书馆底层的冷气是真的开得足；或者是跑到哪个空置的教室去自习，印象中常常去西二的三四楼，好像西二的五楼还是哪里还有“豪华自习室”。</p>
-<p>开学不久国庆后，十月份就迎来了大类专业分流的事情，可能对大多数人来说还是非常重要的。我也纠结了一番，从本来笃定的<em>CS</em>到后来看到入围比而选择放弃，也曾想过要不要选择<em>自动化（控制）</em>或者连面试都不需要的<em>自动化（电气）</em>，不过最后还是咬咬牙报了软件工程的专业面试，幸好面试难度出乎意料的简单，我也就有幸进入了软件工程专业。虽然不是<em>CS</em>，但是<em>软件工程</em>反而更合乎我希望「搭积木」而非「造积木」的构想吧。</p>
-<p>不过随着在大学日子渐久，对整个校园的生活节奏也熟络了不少，似乎对于一些“潜规则”也懂了一些。体育要求的打卡逐渐不再是跑步打卡了，而改成了骑车打卡；上课也不再认真了，「微积分」、「C程」等课时不时拿出手机水一水，「亚洲经济发展」这种通识课就干脆带上笔记本开始干自己的事了；有时也会在图书馆帮同学占个座或者请同学帮忙占个座之类的。半个学期过去，到了冬学期，整个人动力也没那么强了，一到晚上就犯困，偶尔会为了睡觉而翘了「近代中日关系史」的课。</p>
-<p>不过还是有所坚持的，比如工作日坚持七点半前起来，不管有没有早八，如果有早八会六点四十五左右就起来，去食堂好好吃顿早饭，然后在七点半前到教室，不过到了教室也只是玩手机看闲书，预习课程之类的事还是没有的；偶尔也在教学楼无人之处背背英语单词；坚持每天去自习室或者图书馆自习，经常和同学约自习，按时完成作业，因为一到寝室就容易划水。晚上睡觉时间也都控制在十一点半之前，作息还算规律。</p>
-<p>大学和高中不同的一点就是，同学的努力你是看不到的，又或者说，你不会像高中一样简单地找到一个特别努力的榜样在你身边，给你动力。因为各自课程不同，偶有几门交叉而已，课上发言积极表现不错的同学其实你也根本不认识也没兴趣去了解人家，或者只是暗自赞叹一番——别人的生活和你的纠葛实在是太少了。</p>
-<p>虽然跳出了所谓班级团体的那种概念，但至少就我个人而言，很多人其实大部分时间还是在循着高中的方法进行学习，被动式的学习。目标仅仅是完成老师布置的作业，水水论文，应付展示，考试周前狂刷往年卷补天，然后考试拿到一个还算不错的绩点。</p>
-<p>我本以为到了大学我能够完全地按照自己的意愿自己的兴趣去主动地学习去探究求索，但事与愿违。我还是遵照着那一套跟着老师走的步伐，因为很多课我没什么兴趣自己去探究，只是因为这门课必修我不得不去上。然后等考试一结束，这些知识对我来说就变成无用的身外之物了，我就可以毫不留情地丢弃、忘却。就我个人而言，我真正感兴趣的课也不过现代中外关系、公共经济分析导论，再勉强算上一个线性代数罢了（因为线性代数仔细深究之后真的挺有趣的，特别是看了<strong>3Blue1Brown</strong>的视频<a href="https://www.bilibili.com/video/BV1rs411k7ru" target="_blank" rel="noopener">「线性代数的本质」</a>后）。很多课都是没必要上的，却又是不得不上的，这种无奈的情形从高中延续到了大学，而且在浙大这种情况还要持续到大三。</p>
-<p>而到了这个学期，由于网课，我几乎放松到一周只听很少的课。「微积分」基本不听，或者是挂在一边刷知乎和98；「控制论」课不听，讨论课上随便找个问题发个言算了；「程设」倒还算是听得比较认真，不过只有八周的课，而且机房课形同虚设；「离散数学」在听了半个学期后先是从看1.5倍速回放再到不听课自己看课本和ppt；体育课和体辅都只用打卡；「史纲」课随便听听；「大物」课第一次听课看老师是读PPT后就新生厌烦之后就一直只是挂着；形策课从没听过。这学期我学了什么呢？似乎什么也没学到。为数不多的主动学习竟然是旁听了几节刑法总论课还顺便做了笔记，以及在B站上看了几节史晋川老师的<a href="https://www.bilibili.com/video/BV1AE411p7Qb?p=1" target="_blank" rel="noopener">「微观经济学」</a>，和在<strong>YouTube</strong>上看了两三节哈佛的<a href="https://www.youtube.com/watch?v=kBdfcR-8hEY&list=RDCMUCLv7Gzc3VTO6ggFlXY0sOyw&start_radio=1&t=4" target="_blank" rel="noopener"><strong>「JUSTICE」</strong></a>。学习被我打入了冷宫，而睡觉、玩手机、水论坛反倒成了我这学期生活的常态。在家的这么久时间，我陷入了一种长时间的低迷的状态，甚至可以说丧失了专注的能力。</p>
-<hr>
-<h3 id="思考：我们该过怎么样的大学生活？"><a href="#思考：我们该过怎么样的大学生活？" class="headerlink" title="思考：我们该过怎么样的大学生活？"></a><strong>思考：我们该过怎么样的大学生活？</strong></h3><p>至少我目前的学习状态还是以考试为导向，以水学分刷绩点为导向，而没有找到一个核心的自己愿意为之付出巨大努力的目标，其实还是因为迷茫，不知道自己到底未来该干什么。不如说，这种迷茫和未知是一种普遍存在的现象。</p>
-<p>即便有些同学，他们或者能够坚持刷绩点，其实只是因为绩点对保研、对出国有很大的用处，要问他们对自己的那些课程有多少真正的热爱和肯钻研呢？不多的。其实再进一步想，那你保研、出国又是为了什么呢？又或者，有的同学现在就开始筹备去考托福考雅思、去准备竞赛，去考虑科研，很多人其实也不过是为了刷一份亮丽的履历，再进一步问下去他们想做什么，很多人其实也都想不清楚。</p>
-<p>虽然大家都处在一种迷茫的情况，但这种迷茫的情况反倒促使大家变得越来越保守，因循守旧，评价的维度也越来越单一，应试教育思维的阴影仍然悬在每个人的头上。每个人都怕犯错，害怕在哪一步落下。</p>
-<p>就绩点而言，虽然每个人都觉得绩点不能表现自己的水平，甚至有的人对绩点嗤之以鼻，但每个人却又很在乎自己的绩点，为一点点成绩斤斤计较。但又在和绩点无关的地方，在小组展示或者讨论中划水，或者说躺着。大家对正态分布充满抱怨，一方面是因为学校、社会没有摆脱以绩点为标准的评判方式，另一方面也是，学生自己也被绩点所桎梏。</p>
-<p>同时，浙大内部也总是暗含了深深的鄙视链，学院之间的鄙视链，专业之间的鄙视链，成绩之间的鄙视链。很多人都是一种自嘲的状态，对别人又过于夸大，经常戏称别人为大佬。竺院和非竺院之间存在一种隔阂。因为高考分数的不同，工信大类对其他专业的鄙视；因为就业前景的，计算机专业对其他专业的鄙视，“计院大佬”的戏称，以及生环化地“劝退专业”的戏称，以及被忽视了的一些文科等专业。“您满了”之类的绩点上的调侃。有盲从又有嘲讽，有自嘲又有膜拜。一方面是学校在价值观的引导宣传上的功利倾向，另一方面也是学生对于社会上就业现状和未来前景的自我焦虑。我们的教育并没能很好地解决这个问题。</p>
-<p>在这种情况下，我身边的大部分学生还是遵循着一种潜在的生活范式，去学习，去生活，去喜怒哀乐，他们追寻的是前人已经走过的靠谱的道路，过的是无数人已经过过的平淡无味的日子。而就我个人而言，我也仍然陷在这个舒适的泥潭里面。其实有的时候，很多人还是缺乏勇气承认自己不过是平庸的一员，但又不得不接受这个事实吧？</p>
-<p>丧失了探索前行的好奇心，也缺失了敢于尝试不怕犯错的勇气。</p>
-<p>再回顾当初高考揭榜，收到浙大录取通知书，得知自己将于众多灿若星辰的名字，共享“浙大人”这个荣誉的称号，幻想自己能在大学一展身手，实现抱负理想。到底是什么，在一年不到时间里，就让我们明亮的眼神暗淡下来，羞于把这些理想说出口，转而平庸地追寻前人的脚步，陷入唯绩点论的现实泥淖中呢？</p>
-<p>青春，青春这二字，究竟意味着什么？少年，少年又和大人有什么区别？</p>
-<hr>
-<h3 id="课余（兼记流水账）"><a href="#课余（兼记流水账）" class="headerlink" title="课余（兼记流水账）"></a><strong>课余（兼记流水账）</strong></h3><p>事实上，浙大是提供给了我们选择的自由的。不说绝对，但也远比高中要多得多。</p>
-<p>纷繁的社团，花样的组织，丰富的课外活动，频繁的讲座，许多的志愿者活动，和老师的交谈……</p>
-<p>至少这些在浙大是都不缺少的。但是这些活动的参与，是肝还是水，又是靠自己的作为以及选择了。</p>
-<p>就我个人而言，远不能说收获颇丰，细数起来却也不少，比单调的高中生活要丰富许多。</p>
-<p>比如有幸听到了<strong>王安忆</strong>的「文学讲座」，讲马塞尔·普鲁斯特的《追忆似水年华》，比如蹭到了<strong>毕飞宇</strong>的「文学讨论会」，重点讲了加缪的《局外人》，加缪又恰好是我最爱的作家之一，那一场听得我收获颇丰；比如蹭了<strong>国懿</strong>的「中国外交」，体会到了那种千人挤在一间教室的氛围，遗憾国懿已经离开了浙大。</p>
-<blockquote>
-<p><img src="/images/%E6%AF%95%E9%A3%9E%E5%AE%87.jpg" alt=""><br><strong>毕飞宇讲座摘记</strong></p>
-</blockquote>
-<p>比如报名了一场新生辩论赛，兴致勃勃地打算开始自己的辩论生涯，比赛的前一周几乎每天都把注意力放在准备辩题上，和队员讨论到深夜十一十二点，也得到了学长学姐的很大的帮助。我们四个人还特意租了一套正装去打比赛。正式打比赛时莫名紧张，也很激动，有点语无伦次，但也尽量表达出自己的想法。那场比赛本来是判我们赢了，我还拿了所谓最佳辩手。那天晚上四个人高高兴兴地去吃了麻辣烫。然而过了几天又改判我们为负，学长还为我们打抱不平了好久，最终无疾而终。我的辩论生涯也在一轮游后就此结束。</p>
-<p>比如参加了微讯社，虽然没学到什么，却也帮忙拍了国庆升旗仪式和新年狂欢夜，那种拍照的感觉还是很爽的，除此之外学到的就很少了。比如参加了凌云户外俱乐部，挤出一个周末参加了一次两天一夜的户外重装徒步，被带偏路线，随着夜晚来临看到草皮上凝成的霜，第一次搭帐篷睡睡袋，晚上点篝火煎午餐肉吃，早起爬上山坡看日出，放了一夜的水结成冰……这个体验真的令人难忘，而且也使我在学期快结束颓丧的时候新增了动力。</p>
-<blockquote>
-<p><img src="/images/%E5%BE%92%E6%AD%A5%E5%90%88%E7%85%A71.jpg" alt=""><br><strong>上山时（右一为本人）</strong></p>
-</blockquote>
-<blockquote>
-<p><img src="/images/%E5%BE%92%E6%AD%A5%E5%90%88%E7%85%A72.jpg" alt=""><br><strong>山坡上看日出（左三为本人）</strong></p>
-</blockquote>
-<p>除此之外，也做了一些志愿者，有参加了毅行摄影队去玉泉帮忙拍摄毅行出发点团队的合照，有参加自动化大会水志愿者小时数，也有参与学生节当服务志愿者，聊胜于无吧。做点小贡献，也能结交一些朋友。关键是有机会可以观察人们，比如毅行时让我们帮忙拍照的各种学院的团队，或者他们使用的不同手机，又比如在做学生节志愿者时碰到的许许多多的学长学姐和CP，分享新年的喜悦和快乐。</p>
-<blockquote>
-<p><img src="/images/%E6%AF%85%E8%A1%8C.jpg" alt=""><br><strong>毅行摄影——傻呆呆坐着的就是本人</strong></p>
-</blockquote>
-<hr>
-<h3 id="未来"><a href="#未来" class="headerlink" title="未来"></a><strong>未来</strong></h3><p>其实无论是大学，还是其他的任何时候，归根结柢，我们思考的还是作为一个人，该如何生活。人，该如何成为人？而作为进入大学，准备挥斥方遒的我们，其实更有时间也更有选择去思考去探索自己要走的路。</p>
-<p>这，就是青春最值得夸耀的——我们仍然有无尽的可能性。</p>
-<p>当然，这句话是有前提的，不然只不过是一句抚慰人的鸡汤罢了。</p>
-<p>人在青春的时候，思想仍是在不断变化着的，有道是际遇做导游。</p>
-<p>至于未来的路该怎么走，我仍在自己探索着。寻找是人生的主题之一。我略带狂妄地在此将我的思考与生活经历胡言写出，望能给诸位一点帮助。</p>
-<p>而同样在思考的诸位，凭着自己的探索，自有自己的方向。</p>
-<p><em>2020年6月22日 于家中 陈云奇</em></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/04/pandemic/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="陈云奇">
-      <meta itemprop="description" content="一个人只有此生此世是不够的，他还应该拥有诗意的世界">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="沁寒微雪">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/04/pandemic/" class="post-title-link" itemprop="url">苦难、集体记忆与人的尊严——一个局外人对新冠肺炎疫情的思考</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-04-04 00:00:00" itemprop="dateCreated datePublished" datetime="2020-04-04T00:00:00+08:00">2020-04-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-11 11:27:24" itemprop="dateModified" datetime="2020-07-11T11:27:24+08:00">2020-07-11</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="苦难、集体记忆与人的尊严-——一个局外人对新冠肺炎疫情的思考"><a href="#苦难、集体记忆与人的尊严-——一个局外人对新冠肺炎疫情的思考" class="headerlink" title="苦难、集体记忆与人的尊严 ——一个局外人对新冠肺炎疫情的思考"></a>苦难、集体记忆与人的尊严 ——一个局外人对新冠肺炎疫情的思考</h1><h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>2020年4月4日，清明，为疫情牺牲烈士和逝世同胞举行全国性哀悼活动。</p>
-<p>至今，国内的疫情已经算是形势稳定，人们逐渐重回日常生活，生者也开始对死者予以志哀，希望渐渐地光明了。</p>
-<p>然而，世界范围内，形势不容乐观，感染新冠肺炎的人数已经超过百万，其他国家仍然在为阻止疫情扩散做着努力，有些或许到位了，有些却仍让人诟病不停……</p>
-<p>  疫情终究成为了2020年我们挥之不去的阴影：对中国人，尤其对武汉人而言，封城、苦难等等已经成为了一代人的集体记忆了——如同17年前的非典一样。</p>
-<p>许多人把应对新冠肺炎疫情看作是一场战役，把克服疫情成为战役的胜利。我想指出的是，与战争不同的是，在这场疫情中，没有人是胜利者。从疫情开始传播的那一刻，从有人感染、重病乃至逝去的那一刻开始，就注定了我们只会增加我们的苦痛与悲伤，而病毒只会报以无态度的冷漠与绝情。我们能做的，不过是止损，是挽回，是让自己心中的沉重不要再添加更多负担了。</p>
-<p>庆幸可以，感激可以，怀念可以，反思可以，但请不要狂热地歌功颂德、忘乎所以。不要再陷入宏大的集体叙事中而把疫情中的那些人抽象化——他们悲伤、他们哭泣、他们愤怒、他们无望、他们苦中作乐——他们是活生生的，有人的尊严，他们是与你我一样的个体。</p>
-<h2 id="二"><a href="#二" class="headerlink" title="二"></a>二</h2><p><strong>鲁迅</strong>先生曾说：「无穷的远方，无数的人们，都与我有关。」可笑高中时写作文常常引用这句话，现在才有更深的理解。</p>
-<p>又不能免俗地想起<strong>约翰·多恩</strong>的《没有人是一座孤岛》：</p>
-<p>没有谁是一座孤岛，</p>
-<p>在大海里独踞；</p>
-<p>每个人都像一块小小的泥土，</p>
-<p>连接成整个陆地。</p>
-<p>如果有一块泥土被海水冲刷，</p>
-<p>欧洲就会失去一角，</p>
-<p>这如同一座山岬，</p>
-<p>也如同一座庄园，</p>
-<p>无论是你的还是你朋友的。</p>
-<p>无论谁死了，</p>
-<p>都是我的一部分在死去，</p>
-<p>因为我包含在人类这个概念里。</p>
-<p>因此，</p>
-<p>不要问丧钟为谁而鸣，</p>
-<p>丧钟为你而鸣。</p>
-<h2 id="三"><a href="#三" class="headerlink" title="三"></a>三</h2><p>在这场疫情中，身在温州乡村的我，并没有做过任何对疫情有帮助的实际意义上事，连捐款都没（本来想捐，却又因为当时红十字会的问题而作罢），我不过是每天看着新闻，看着抽象的数字的上升，确诊、死亡、治愈……以致后来我几乎对数字麻木了。我不过是每天在微博上看阑夕的封城日记，在知乎与豆瓣看看不同人的发言。</p>
-<p>我不过是个毫无作用的局外人。</p>
-<p>对于疫情中的生离死别，悲欢离合，我又何尝没看见呢？然而这些故事我大多不去细看，也不敢去细看。</p>
-<p>与其说我是冷漠，不如我是怯懦。</p>
-<p>最初对新冠肺炎的关注，来自微博上偶然看到的一则武汉市对不明肺炎的通知，又看到的是对肺炎“谣言”的辟谣。那时刚放假，我还在高中QQ群里问了武大回来的察察有没有什么情况，他当时还是一种不太在意的态度，说没什么变化。</p>
-<p>到1月20号之前，我还天天往返上塘与村里，坐公交去学车。</p>
-<p>到了1月23号，武汉开始封城了。全国的气氛都随之一变。</p>
-<p>那几天全是对于武汉市市长还有湖北省省委书记等人（人们戏称湖北F4）的各种失职的批判，对于政府粗糙政策的质疑；另一面则是在这种失职之下，疫情的扩散与蔓延。</p>
-<p>然后我在B站看了up主<strong>林晨同学</strong>对于「空城」武汉的<a href="https://www.bilibili.com/video/BV1H7411Y7kG" target="_blank" rel="noopener">「实拍」</a>。</p>
-<p>事态就这么一步步严重起来了。</p>
-<h2 id="四"><a href="#四" class="headerlink" title="四"></a>四</h2><p>情绪被真正点燃的那一晚，应该是李文亮医生逝世的那一晚。</p>
-<p>我想应该不止我一个人的情绪在那一晚被点燃了，许多人的情绪——愤怒、悲伤、惋惜、痛心——各种交杂的情绪都在那一晚爆发出来了。</p>
-<p>那一晚上，我本该早早睡觉，却在床上刷微博，看到了李文亮医生被抢救的消息。之后，我守着手机，每隔几分钟就刷一下，看着情况的实时变化，暗暗期待着奇迹的出现——尽管我内心的理性告诉我，李文亮逝世这件悲剧应该是不可挽回地发生的了。</p>
-<p>我也愤怒、悲伤、惋惜、痛心，然后我又开始哂笑自己。命运真是无情，“吹哨人”的预警消息因为所谓“稳定大于一切”的缘由被不经考察地视作谣言，英雄的行径换来的全是病毒冷漠的感染。只有在悲剧真正发生后，训诫书才被撤销，然后是轻巧地追责；迟到的正义匆匆赶来，他被追为了烈士——诚然光荣而伟大，可这样的事情本不必发生的。</p>
-<p>我哀叹，无力感布满全身，无奈地想到：</p>
-<p>为什么，总要等坏事发生了，才想到去改正去解决呢？我们本可以更早发现问题并减少损失的呀。</p>
-<p>还有一件事，关于《人物》的文章<a href="https://new.qq.com/omn/20200312/20200312A0S9N400.html" target="_blank" rel="noopener">《发哨子的人》</a>。</p>
-<p>我记得我刚开始是在微信公众号看了这篇文章的，然而过了半天，当我再次试图打开这篇文章时，却显示“此内容因违规无法查看”。</p>
-<p>而这一次，愤怒堆积太久，网友不再沉默，采取了各种外文乃至摩斯电码的方式来保全与传播这篇文章——这几乎成为互联网上的一次公开且大规模的反抗。</p>
-<p>最后，这篇文章不再被删除了。</p>
-<p>这引起了我对舆论管控的思考。</p>
-<p>说真话，说错话与谣言，对这三者的分辨和管制，一定要用一刀切的“谣言定性”或者删帖的方式进行吗？我们本可以进行进一步的考察，用「实践是检验真理的唯一标准」这个原则来检验各种言论的。</p>
-<p>普通人李文亮，英雄李文亮，说：「一个健康的社会不应该只有一种声音。」</p>
-<p>医生艾芬说：「早知道有今天，我管他批评不批评我，‘老子’到处说，是不是？」</p>
-<p>独立之思想，真话，不同的声音。</p>
-<h2 id="五"><a href="#五" class="headerlink" title="五"></a>五</h2><p>接下来的焦点，是两个群体：医生（泛指各种医护人员）与女性。</p>
-<p>医生，毋庸置疑，是这场对疫情的抗争的主力。过年时在办公室草草地用泡面饱腹以充当年夜饭，一整天戴着口罩把脸勒出红色的印痕，面对病人时感染的风险。</p>
-<p>武汉本地的医生，全国各地前去武汉支援的医护人员。</p>
-<p>没有日夜，酒店隔离，面对病人各种情绪爆发自己却必须保持理性克制，在办公室声嘶力竭地痛哭，擦去眼泪后仍要拖着疲惫地身躯去面对残酷的病毒；治病之外还要面对无关事件，物资的缺乏，管理的混乱，医院与红十字会的矛盾……这场荒诞的“鼠疫”，这西西弗推石上山一般的重复与无尽，循环，忙碌，无暇思考。</p>
-<p>然而这场看似无尽的抗争，这些医生坚持下来了，并迎来了希望的曙光。</p>
-<p>再说女性。</p>
-<p>女性在医疗人员中占60%-%70，这是一个极其庞大的群体。武汉同济医院超过5000人，协和医院约5700人，金银潭医院约1300人……</p>
-<p>然而，许多医院声称只需要口罩和防护服，却不需要生活物资。它们忽视女性的生理期，不在意卫生巾的缺乏，也不懂安心裤和纸尿裤的区别。</p>
-<p>女性的生理需求被视为私密的，关于月经的发声被视为羞耻的，也因此她们的声音被淹没被抑制。</p>
-<p>她们在对抗病毒的同时，却还需要隐秘地与自己的生理期进行对抗。</p>
-<p>除此之外，还有武汉社区居委会的女性，还有火神山医院中的强大的女性建筑工人……</p>
-<p>被忽视的女性，被掩盖的性别差异，被不重视的权利区别。</p>
-<h2 id="六"><a href="#六" class="headerlink" title="六"></a>六</h2><p>人们说：「武汉是一座英雄的城市。」</p>
-<p>用“英雄”这样宏伟的词来形容与夸赞，总让我有种陷入宏大抽象叙事的不安感。</p>
-<p>不如说，武汉人在这场疫情中，体现了“人”的尊严，体现了当人面对苦难时，面对荒诞时，那股求生的意志，那股不屈不挠的坚持，那股团结一心的坚信。</p>
-<p>这场疫情，我想，对每个人的心理肯定都有或多或少的影响。或许是生死的心如绞痛，或许是联系在一起后的同悲同乐，或许是并无多少显著情绪却留下的淡淡的伤痕。</p>
-<p>然而，无论世事如何，大家总保有对未来的乐观，保有生活下去的坚强，有直面惨淡人生的勇气。</p>
-<p>时代的突转总是难以预测出人意料，荒谬且令人错愕。</p>
-<p>2019，本以为足够糟糕了；2020，没想到更加牵动人心。</p>
-<p>然而，无论时代的浪潮如何奔涌，我们仍紧紧把着手中的舵，颠簸，然而不会沉没。</p>
-<p>请不要忘却这场没有胜利者的苦难战争中逝去的人们，请不要忘却各种尸位素餐贪婪滑稽的官员，请不要忘却全国上下付出艰苦努力的普通人。</p>
-<p>哨声长鸣，记忆长存。</p>
-<h2 id="七"><a href="#七" class="headerlink" title="七"></a>七</h2><p>此生，我一定要去武汉好好游历一番。</p>
-<p><em>陈云奇</em></p>
-<p><em>于2020.4.4 清明</em></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-
-
-
+            
           </div>
+
           
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
-
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
       </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">陈云奇</p>
-  <div class="site-description" itemprop="description">一个人只有此生此世是不够的，他还应该拥有诗意的世界</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
 
 
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/07/11/hello-world/">初次见面，你好</a>
+
+      <a href="/2020/07/11/hello-world/" class="index-excerpt">
+        
+        
+          
+        
+        <div>介绍你好，我是陈云奇
+一个一直求而不得胡思乱想不务正业的人
+热爱观察人间、社会与世界
+目前就读于浙江大学软件工程专业
+喜欢读书、摄影、徒步和交谈
+希望未来能成为一名卓越的程序员
+make the world a better place
+这个博客的目的
+
+记录我的学习经验
+记录我的思索路径
+记录我的人生旅途
+
+
+希望能够给碰巧进入这个网站的朋友一点帮助(^__^);
+联系我
+我的邮箱：284107</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-07-11
+          </div>
+        
+        
+        
       </div>
-    </main>
+    </div>
+  </div>
 
-    <footer class="footer">
-      <div class="footer-inner">
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/06/22/experience-in-ZJU/">溯洄从之，道阻且长——在ZJU一年有感</a>
+
+      <a href="/2020/06/22/experience-in-ZJU/" class="index-excerpt">
         
-
         
+          
+        
+        <div>溯洄从之，道阻且长——在ZJU一年有感序王小波曾在《万寿寺》的结尾中写道：「一切都在无可挽回地走向庸俗」。然而，就在同一段中，他却也写了下那句：「一个人只拥有此生此世是不够的，他还应该拥有诗意的世界」。正如他在同一段展现的不同句子一样，终点也许是让人失望的，但在路上，还是要好好走，「永远青春，永远热泪盈眶」。
+也因此，出于一种自恋的想法，我在此写下一些文字，并自以为会对一些阅读文字的人有所启发。最</div>
+      </a>
 
-<div class="copyright">
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-06-22
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/05/01/one-day-with-happiness/">流水记一日</a>
+
+      <a href="/2020/05/01/one-day-with-happiness/" class="index-excerpt">
+        
+        
+          
+        
+        <div>
+如果你陷入颓废而自觉无奈的情状，那就和朋友出去浪，吃饭、聊天、骑车、踏马路，什么也别想，就随便聊，放开了玩。也许你会找到你寻求的答案，也许你找不到，但无所谓，快乐是真的，充实也是真的。
+
+约了波波等四人一起出去浪。
+早上快十点才起来，然后坐上公交十点半到上塘等波波，再转另一辆公交车，到瓯北已经十一点二十左右了，再等艹艹，再等丫丫。
+几个人在商场里兜兜逛逛，找不到午餐的去处；出了商场在街上寻觅，结</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-05-01
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/04/04/pandemic/">苦难、集体记忆与人的尊严——一个局外人对新冠肺炎疫情的思考</a>
+
+      <a href="/2020/04/04/pandemic/" class="index-excerpt">
+        
+        
+          
+        
+        <div>苦难、集体记忆与人的尊严 ——一个局外人对新冠肺炎疫情的思考一2020年4月4日，清明，为疫情牺牲烈士和逝世同胞举行全国性哀悼活动。
+至今，国内的疫情已经算是形势稳定，人们逐渐重回日常生活，生者也开始对死者予以志哀，希望渐渐地光明了。
+然而，世界范围内，形势不容乐观，感染新冠肺炎的人数已经超过百万，其他国家仍然在为阻止疫情扩散做着努力，有些或许到位了，有些却仍让人诟病不停……
+  疫情终究成为了2</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-04
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/03/29/JiaoHun/">《叫魂：1768年中国妖术大恐慌》读后感</a>
+
+      <a href="/2020/03/29/JiaoHun/" class="index-excerpt">
+        
+        
+          
+        
+        <div>  「1768年，中国悲剧性近代的前夜。」——这是全书的第一句。
+  其时正是所谓「康乾盛世」，表面光鲜亮丽，人口、商贸、农业等等似乎都处在一个顶峰期；然而「叫魂案」，这个神奇的幽灵，就在这「镀金时代」，游荡在清代中国大地上。它以荒谬的方式出现，又以荒谬的方式结束。
+而孔飞力先生的《叫魂：1768年中国妖术大恐慌》一书，就旨在通过描述与分析这场全社会的叫魂恐惧，借此更深入地理解那个时代及其背后的历</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-03-29
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2020/01/01/rethink-the-2019/">高考、大学、孤立与联系——我的2019年“负”思考</a>
+
+      <a href="/2020/01/01/rethink-the-2019/" class="index-excerpt">
+        
+        
+          
+        
+        <div>序现在是2020年凌晨2点50分，我从接到微讯社的任务去拍摄新年狂欢夜，到拍完后被波波拉着去吃烤鱼（还因为糊里糊涂地把校内共享骑到剑桥公社而被罚了第一单整整15元），再到吃完慢悠悠回寝，洗了个澡，直到现在。宿舍早已黑暗，室友A的鼾声有规律地向起。而现在，跨入新年的喧哗与骚动逐渐消去，紫云篮球场密密麻麻的人潮水般退去，灯光绚烂的校园回归暗黑与静寂。
+趁着跨入新年的喜悦感和某种难言的心流还未完全消去，</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-01-01
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/10/20/congcong/">匆匆</a>
+
+      <a href="/2019/10/20/congcong/" class="index-excerpt">
+        
+        
+          
+        
+        <div>桂花香渐散漫着整座紫金港，第一轮专业确认（软件工程）的面试落去。    
+懵懵懂懂，恍恍惚惚，走进面试教室，三位一体的面试场景依稀在前。
+我向来是一个第一次总会因为状态或各种这样那样原因而出差错的人。但幸运的是，我总是能够抓住第二次的机会。选考的物理化学是这样，高考的英语也是这样。命运之神总会在第一次弃我而去，又在第二次挠挠头突然想起我这号人似的。我总是在第一次时给自己莫大的不必要的压力，而这压力</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-10-20
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/08/27/Junxun/">冷眼看军训</a>
+
+      <a href="/2019/08/27/Junxun/" class="index-excerpt">
+        
+        
+          
+        
+        <div> 一个认同王小波的人，不会认同军训隐含的价值观念。
+尤瓦尔·赫拉利在《人类简史》提过：
+
+在基因、荷尔蒙、有机体之外，人类社会的另外一条重要主线，这就是意识形态、想象力和讲故事的能力。正因为语言的出现和讲故事能力的提升，人们能够以极其灵活的方式与陌生人进行大规模的协作。
+
+是的，历史的进程在此角度上就是人类想象力的变化演进。奴隶，封建，王朝，民主，党派，战争，经济，商业……都是人类想象力的结果，是</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-08-27
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/07/31/Huaian/">淮安印象</a>
+
+      <a href="/2019/07/31/Huaian/" class="index-excerpt">
+        
+        
+          
+        
+        <div>在灼热的夏天，出门旅行，是件不那么愉快的事。
+热，在打开门走出空调房的一瞬间就扑面而来，从头上，从手臂，从脚上，四面八方无所不至。
+然而，我们还是出门了，我们上了飞机，我们下了飞机，我们打了滴滴，我们住了民宿。
+我们到了，来到淮安——这座苏北的闲逸城市，去看望我们初中的英语老师——王特。
+车水马龙，公交来往，轻轨缓缓而行，平原开阔，四望无边，绿植杂然期间。
+喧闹的城市，无云的晴天，干净的街道。这些</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-07-31
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <div class="col-12 col-md-12 mx-auto index-info">
+      <a class="index-header" href="/2019/02/05/newyear-2019/">流动的盛宴——致2019</a>
+
+      <a href="/2019/02/05/newyear-2019/" class="index-excerpt">
+        
+        
+          
+        
+        <div>又是一年过去，绚烂的烟花把漆黑的天空照亮得泛白，轰隆声不断，耳膜被震得颤动起来，眼前的鞭炮放完后留下浓郁的烟雾…… 
+生活是流动的盛宴。这盛宴的餐桌是流动的时间之河，从一切之无流到此处，从此处流向彼处，直至流向无限、而我，我不是个整体，我是散落于河流上的碎片，是摆放在餐桌上的菜肴，这半桌是我的内在，那半桌是我外在的呈现，这一小盘是我的知识储备，那一小盘是我的憎恶之物……这餐桌流动着，我的各个部分也</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2019-02-05
+          </div>
+        
+        
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
   
-  &copy; 
-  <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">陈云奇</span>
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
   </div>
+</footer>
 
-        
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
 
+<!-- Plugins -->
 
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
+    <script  src="/js/lazyload.js" ></script>
   
 
 
 
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "An elegant Material-Design theme for Hexo&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
 
 
 
@@ -696,9 +608,15 @@
 
 
 
-  
 
-  
+
+
+
+
+
+
+
+
 
 </body>
 </html>
